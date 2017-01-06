@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //Find the view containing the Now playing category
+        //Find the view containing the Store category
         TextView store = (TextView) findViewById(R.id.content5);
 
         // Set a click listener on that View
