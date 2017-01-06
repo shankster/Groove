@@ -29,12 +29,61 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //Find the view containing the Albums category
+        TextView albums = (TextView) findViewById(R.id.content2);
 
+        // Set a click listener on that View
+        albums.setOnClickListener(new View.OnClickListener() {
+            //Overriding the onClick method defined in the View.class
+            @Override
+            public void onClick(View view) {
+                //Create an explicit intent to open another window
+                Intent nowPlayingIntent = new Intent(MainActivity.this, Albums.class);
+                startActivity(nowPlayingIntent);
+            }
+        });
 
+        //Find the view containing the Artists category
+        TextView artists = (TextView) findViewById(R.id.content3);
 
+        // Set a click listener on that View
+        artists.setOnClickListener(new View.OnClickListener() {
+            //Overriding the onClick method defined in the View.class
+            @Override
+            public void onClick(View view) {
+                //Create an explicit intent to open another window
+                Intent nowPlayingIntent = new Intent(MainActivity.this, Artists.class);
+                startActivity(nowPlayingIntent);
+            }
+        });
 
+        //Find the view containing the Podcasts category
+        TextView podcasts = (TextView) findViewById(R.id.content4);
 
+        // Set a click listener on that View
+        podcasts.setOnClickListener(new View.OnClickListener() {
+            //Overriding the onClick method defined in the View.class
+            @Override
+            public void onClick(View view) {
+                //Create an explicit intent to open another window
+                Intent nowPlayingIntent = new Intent(MainActivity.this, Podcasts.class);
+                startActivity(nowPlayingIntent);
+            }
+        });
 
+        //Find the view containing the Store category
+        TextView store = (TextView) findViewById(R.id.content5);
+
+        // Set a click listener on that View
+        store.setOnClickListener(new View.OnClickListener() {
+            //Overriding the onClick method defined in the View.class
+            @Override
+            public void onClick(View view) {
+                //Create an explicit intent to open another window
+                Intent nowPlayingIntent = new Intent(MainActivity.this, Store.class);
+                startActivity(nowPlayingIntent);
+            }
+        });
 
     }
 }
